@@ -7,12 +7,9 @@
     @include breakpoint-up(medium){
         margin-right:31em;
         margin-left:31em;
-        margin-top:6.25em;
+        margin-top:3.125em;
         margin-bottom: 6.25em;
-        margin-bottom:8em;
         padding:0;
-        width:24.125rem;
-             
         }
 }
 
@@ -31,7 +28,7 @@
         background-size:cover;
         background-repeat:no-repeat;
         background-position: center center;
-        height:350px;
+        height:400px;
         width:100%;
         }
 
@@ -64,6 +61,11 @@
 .title{
     font-size:1.45rem;
     font-weight:900;
+
+    @include breakpoint-up(medium){
+        font-size:1.8rem;
+       
+        }
 }
 
 .paragraph{
@@ -74,6 +76,10 @@
     padding-right: 0.5rem;
     color:$Desaturatedblue;
     line-height: 1.7;
+    
+    @include breakpoint-up(medium){
+        font-size:1.2rem;
+        }
 }
 }
 
@@ -90,7 +96,7 @@
     display:block;
 
     @include breakpoint-up(medium){
-        font-size:0.95rem;
+        font-size:1.2rem;
         }
 }
 }
@@ -126,6 +132,7 @@
 
 .cancel{
     text-decoration: none;
+    color:$Desaturatedblue;
 }
 
 

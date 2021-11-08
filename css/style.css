@@ -88,11 +88,9 @@ a:active {
   .container {
     margin-right: 31em;
     margin-left: 31em;
-    margin-top: 6.25em;
+    margin-top: 3.125em;
     margin-bottom: 6.25em;
-    margin-bottom: 8em;
     padding: 0;
-    width: 24.125rem;
   }
 }
 
@@ -113,7 +111,7 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 350px;
+    height: 400px;
     width: 100%;
   }
 }
@@ -150,6 +148,12 @@ a:active {
   font-weight: 900;
 }
 
+@media (min-width: 40em) {
+  .item1 .title {
+    font-size: 1.8rem;
+  }
+}
+
 .item1 .paragraph {
   font-size: 0.96rem;
   font-weight: 500;
@@ -158,6 +162,12 @@ a:active {
   padding-right: 0.5rem;
   color: #7280a7;
   line-height: 1.7;
+}
+
+@media (min-width: 40em) {
+  .item1 .paragraph {
+    font-size: 1.2rem;
+  }
 }
 
 .item2 {
@@ -176,7 +186,7 @@ a:active {
 
 @media (min-width: 40em) {
   .item2 .paragraph2 {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -209,6 +219,7 @@ a:active {
 
 .cancel {
   text-decoration: none;
+  color: #7280a7;
 }
 
 a {
