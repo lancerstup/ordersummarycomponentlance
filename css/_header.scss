@@ -1,13 +1,40 @@
 .container{
     padding:4.375rem 1.5rem;
-
+    position:absolute;
+    top:0;
+ 
+   
     @include breakpoint-up(medium){
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:6.5%;
+        margin-right:31em;
+        margin-left:31em;
+        margin-top:6.25em;
+        margin-bottom: 6.25em;
+        margin-bottom:8em;
         padding:0;
         width:24.125rem;
+             
         }
+}
+
+#hero{
+    position:relative;
+    background:url(../img/pattern-background-mobile.svg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height:200px;
+    width:100%;
+
+    @include breakpoint-up(medium){
+        position:relative;
+        background:url(../img/pattern-background-desktop.svg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:350px;
+        width:100%;
+        }
+
 }
 
 .content{
