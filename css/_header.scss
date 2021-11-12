@@ -1,20 +1,25 @@
+
 .container{
-    padding:4.375rem 1.5rem;
+    height:705px;
+    width:330px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
     position:absolute;
-    top:0;
- 
-   
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
     @include breakpoint-up(medium){
-        margin-right:31em;
-        margin-left:31em;
-        margin-top:3.125em;
-        margin-bottom: 6.25em;
-        padding:0;
+        width:435px;
+        height:650px;
+        margin:auto;
+        
         }
 }
 
 #hero{
-    position:relative;
     background:url(../img/pattern-background-mobile.svg);
     background-size:cover;
     background-repeat:no-repeat;
@@ -22,7 +27,7 @@
     height:200px;
     width:100%;
 
-    @include breakpoint-up(medium){
+    @include breakpoint-up(large){
         position:relative;
         background:url(../img/pattern-background-desktop.svg);
         background-size:cover;
@@ -35,10 +40,18 @@
 }
 
 .content{
+    width:330px;
+    height:570px;
+    box-shadow: 0 10px 100px -60px;
     background:white;
     border-radius:15px;
-    @include breakpoint-up(medium){
-        margin:0
+
+    @include breakpoint-up(large){
+        width:445px;
+        height:650px;
+        margin:0;
+        
+        
         }
 }
 
@@ -62,7 +75,7 @@
     font-size:1.45rem;
     font-weight:900;
 
-    @include breakpoint-up(medium){
+    @include breakpoint-up(large){
         font-size:1.8rem;
        
         }
@@ -77,7 +90,7 @@
     color:$Desaturatedblue;
     line-height: 1.7;
     
-    @include breakpoint-up(medium){
+    @include breakpoint-up(large){
         font-size:1.2rem;
         }
 }
@@ -95,7 +108,7 @@
     padding-left:1rem;
     display:block;
 
-    @include breakpoint-up(medium){
+    @include breakpoint-up(large){
         font-size:1.2rem;
         }
 }
